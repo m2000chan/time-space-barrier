@@ -1,4 +1,4 @@
-//SpaceTimeBarrier (Kevin Bao & Nikita Borisov & Max Chan)
+//TimeSpaceBarrier (Kevin Bao & Nikita Borisov & Max Chan)
 //APCS2 pd01
 //hw #07: what does the data say?
 //due: 2017-02-15
