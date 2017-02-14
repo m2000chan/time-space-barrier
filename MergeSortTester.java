@@ -6,9 +6,15 @@
 /*======================================
   class MergeSortTester
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  This is a recursive algorithm, whose base case is recieving a array
+  of length one (which it simply returns). If the array is longer than length
+  one, then the program will create two arrays that will respectively contain
+  the first and second half of the elements the program is attempting to sort.
+  It will then call MergeSort on both sub-arrays and use a linear run time merge
+  algorithm to combine the two sorted sub-arrays into one sorted array which 
+  will be returned.
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  O(n*logn)
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
   n=1       time: 
