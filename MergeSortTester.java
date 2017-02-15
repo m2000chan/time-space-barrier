@@ -83,8 +83,17 @@ public class MergeSortTester
         }
         y = System.nanoTime();
         System.out.println("Avg execution time for sort of array with size one hundred thousand (1000 trials): ");
-        System.out.println((int) (y - x) / 1000);
+        /*System.out.println((int) (y - x) / 1000);
         System.out.println(" Nanoseconds");
+        System.out.print("Testing: x = ");
+        System.out.println(x);
+        System.out.print("Testing: y = ");
+        System.out.println(y);
+        System.out.print("Testing: y - x = ");
+        System.out.println(y - x);
+        System.out.print("Testing: (y - x)/1000 = ");*/
+        System.out.println((y - x)/1000);
+
     
     
     
