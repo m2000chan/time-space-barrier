@@ -17,13 +17,17 @@
   O(n*logn)
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
-  n=1       time: 
-  n=10      time: 
-  n=100     time: 
+  n=1       time: 2748
+  n=10      time: 4756
+  n=100     time: 43693.5
   ...
-  n=1,000,000  time: 
+  n=100,000  time: 1710160
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  Although the execution time for lower values of n did not portray a graph of 
+  nlogn, when n became much greater as when n=100000, the execution time 
+  increasingly represented that of nlogn. Our average time for n=100000, 1710160
+  nanoseconds, and 10 other execution times collected for n=100000 all lie
+  around the expected value of 100000log(100000) which is approximately 1660964.
   ======================================*/
 
 public class MergeSortTester 
@@ -31,10 +35,12 @@ public class MergeSortTester
 
     /******************************
      * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...>
-     ******************************/
+     * We will create four arrays each with length of 1, 10, 100, and 100000 and
+       randomly populate them with integers from a range of 0 to the array's 
+       length -1. For each array, sort is called 1000 times to get the average
+       execution time for 1000 trials. 
+     ******************************/    
+
     public static void main( String[] args ) {
         int[] one = {1};
         int[] ten = new int[10];
