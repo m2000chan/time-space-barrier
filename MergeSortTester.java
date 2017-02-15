@@ -21,7 +21,7 @@
   n=10      time: 
   n=100     time: 
   ...
-  n=<huge>  time: 
+  n=1,000,000  time: 
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
@@ -35,8 +35,60 @@ public class MergeSortTester
      *  YOUR APPARATUS FOR GENERATING EXECUTION 
      *  TIME DATA...>
      ******************************/
-    public static void main( String[] args ) 
-    {
+    public static void main( String[] args ) {
+        int[] one = {1};
+        int[] ten = new int[10];
+        int[] hun = new int[100];
+        int[] hunthou = new int[100000];
+        for (int x = 0; x < 10; x++){
+            ten[x] = (int) (Math.random() * 10);
+        }
+        for (int x = 0; x < 100; x++){
+            hun[x] = (int) (Math.random() * 100);
+        }
+        for (int x = 0; x < 100000; x++){
+            hunthou[x] = (int) (Math.random() * 100000);
+        }
+        long y = 0;
+        long x = System.nanoTime();
+        for (int z = 0; z < 1000; z ++){
+            MergeSort.sort(one);
+        }
+        y = System.nanoTime();
+        System.out.println("Avg execution time for sort of array with size one (1000 trials): ");
+        System.out.println((int) (y - x) / 1000);
+        System.out.println(" Nanoseconds");
+        
+        x = System.nanoTime();
+        for (int z = 0; z < 1000; z ++){
+            MergeSort.sort(ten);
+        }
+        y = System.nanoTime();
+        System.out.println("Avg execution time for sort of array with size ten (1000 trials): ");
+        System.out.println((int) (y - x) / 1000);
+        System.out.println(" Nanoseconds");
+        
+        x = System.nanoTime();
+        for (int z = 0; z < 1000; z ++){
+            MergeSort.sort(hun);
+        }
+        y = System.nanoTime();
+        System.out.println("Avg execution time for sort of array with size one hundred (1000 trials): ");
+        System.out.println((int) (y - x) / 1000);
+        System.out.println(" Nanoseconds");
+        
+        x = System.nanoTime();
+        for (int z = 0; z < 1000; z ++){
+            MergeSort.sort(hunthou);
+        }
+        y = System.nanoTime();
+        System.out.println("Avg execution time for sort of array with size one hundred thousand (1000 trials): ");
+        System.out.println((int) (y - x) / 1000);
+        System.out.println(" Nanoseconds");
+    
+    
+    
+        
 
     }//end main
 
