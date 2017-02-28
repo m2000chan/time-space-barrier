@@ -4,3 +4,6 @@
 [submodule "3GChipmunks"]
 	path = 3GChipmunks
 	url = git@github.com:TerryMinal/3GChipmunks.git
+[submodule "CaMRy"]
+	path = CaMRy
+	url = git@github.com:csmithsalzberg/CaMRy.git
