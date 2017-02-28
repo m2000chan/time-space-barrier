@@ -14,6 +14,6 @@
 
 From our data, we concluded that mergesort has a runtime of O(nlogn). Although lower values of n (n=1, n=10, n=100) did not result in nlogn execution times, as n increased (n=100000), the execution times showed a significant similarity to the graph of nlogn.
 
-<a href="https://docs.google.com/a/stuy.edu/document/d/1xzQMZdSuBXd9GTVbygGOTw1xXbWF-QZ27ppZoHx5H2I/edit?usp=sharing">Click here to see Graph where n=100000</a>
+<a href="https://docs.google.com/a/stuy.edu/document/d/1xzQMZdSuBXd9GTVbygGOTw1xXbWF-QZ27ppZoHx5H2I/edit?usp=sharing">Click hear to see the graphs of quadratic,loglinear, and linear functions against the data!</a>
 
 <a href="https://docs.google.com/a/stuy.edu/spreadsheets/d/1jrgjrsi2fvpEW-eyy7c8hWIHwaXb0lNC2D3wqBVDVME/edit?usp=sharing">Click here to see Data</a>
