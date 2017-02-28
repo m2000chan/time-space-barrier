@@ -1,3 +1,6 @@
 [submodule "ShakaLakaDingDong"]
 	path = ShakaLakaDingDong
 	url = git@github.com:matteowong/ShakaLakaDingDong.git
+[submodule "3GChipmunks"]
+	path = 3GChipmunks
+	url = git@github.com:TerryMinal/3GChipmunks.git
