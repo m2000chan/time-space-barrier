@@ -1,0 +1,3 @@
+[submodule "ShakaLakaDingDong"]
+	path = ShakaLakaDingDong
+	url = git@github.com:matteowong/ShakaLakaDingDong.git
